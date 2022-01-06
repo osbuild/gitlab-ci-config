@@ -1,0 +1,5 @@
+{
+  "terraform_token": "terraform awesome token",
+  "shell_token": "shell magnificent token",
+  "terraform_openstack_token": "terraform openstack gorgeous token"
+}

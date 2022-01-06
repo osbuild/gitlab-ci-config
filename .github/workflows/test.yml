@@ -1,0 +1,19 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: "Test the config template"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install Jinja2
+        run: pip install Jinja2
+      - name: Run test
+        run: ./test/run-test.py
