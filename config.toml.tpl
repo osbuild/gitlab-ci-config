@@ -1,4 +1,4 @@
-concurrent = 100
+concurrent = 160
 check_interval = 0
 
 [session_server]
@@ -6,7 +6,7 @@ session_timeout = 1800
 
 [[runners]]
 name = "terraform"
-limit = 60
+limit = 120
 url = "https://gitlab.com/"
 token = "{{ terraform_token }}"
 executor = "custom"
@@ -38,7 +38,7 @@ cache_dir = "/home/gitlab-runner/cache"
 
 [[runners]]
 name = "terraform/openstack"
-limit = 20
+limit = 35
 url = "https://gitlab.com/"
 token = "{{ terraform_openstack_token }}"
 executor = "custom"
