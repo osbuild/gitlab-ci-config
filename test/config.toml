@@ -38,7 +38,7 @@ cache_dir = "~/cache"
 
 [[runners]]
 name = "terraform/openstack"
-limit = 35
+limit = 40
 url = "https://gitlab.com/"
 token = "terraform openstack gorgeous token"
 executor = "custom"
