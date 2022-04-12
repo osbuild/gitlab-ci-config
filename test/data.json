@@ -1,5 +1,8 @@
 {
   "terraform_token": "terraform awesome token",
   "shell_token": "shell magnificent token",
-  "terraform_openstack_token": "terraform openstack gorgeous token"
+  "terraform_openstack_token": "terraform openstack gorgeous token",
+  "redhat_terraform_token": "terraform awesome token",
+  "redhat_shell_token": "shell magnificent token",
+  "redhat_terraform_openstack_token": "terraform openstack gorgeous token"
 }
