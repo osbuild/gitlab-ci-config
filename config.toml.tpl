@@ -1,4 +1,4 @@
-concurrent = 165
+concurrent = 500
 check_interval = 0
 
 [session_server]
@@ -6,7 +6,7 @@ session_timeout = 1800
 
 [[runners]]
 name = "terraform"
-limit = 120
+limit = 455
 url = "https://gitlab.com/"
 token = "{{ redhat_terraform_token }}"
 executor = "custom"
