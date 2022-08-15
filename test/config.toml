@@ -1,4 +1,4 @@
-concurrent = 350
+concurrent = 380
 check_interval = 0
 
 [session_server]
@@ -38,7 +38,7 @@ cache_dir = "/home/gitlab-runner/cache"
 
 [[runners]]
 name = "terraform/openstack"
-limit = 40
+limit = 70
 url = "https://gitlab.com/"
 token = "terraform openstack gorgeous token"
 executor = "custom"
