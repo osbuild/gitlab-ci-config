@@ -54,3 +54,22 @@ prepare_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/prepare"
 prepare_exec_timeout = 43200
 run_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/exec"
 cleanup_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/cleanup"
+
+[[runners]]
+name = "terraform/gcp"
+limit = 200
+url = "https://gitlab.com/"
+token = "terraform gcp glorious token"
+executor = "custom"
+builds_dir = "~/builds-gcp"
+cache_dir = "~/cache"
+[runners.custom_build_dir]
+[runners.cache]
+[runners.cache.s3]
+[runners.cache.gcs]
+[runners.cache.azure]
+[runners.custom]
+prepare_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/prepare"
+prepare_exec_timeout = 43200
+run_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/exec"
+cleanup_exec = "/home/gitlab-runner/gitlab-ci-terraform-executor/cleanup"
