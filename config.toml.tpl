@@ -38,7 +38,7 @@ cache_dir = "/home/gitlab-runner/cache"
 
 [[runners]]
 name = "terraform/openstack"
-limit = 70
+limit = 50
 url = "https://gitlab.com/"
 token = "{{ redhat_terraform_openstack_token }}"
 executor = "custom"
